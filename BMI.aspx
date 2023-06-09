@@ -21,11 +21,13 @@
         <div>
             <asp:Label ID="Label1" runat="server" Text="Weight (in pounds):"></asp:Label>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter your weight!!" ControlToValidate="TextBox1" ForeColor="#FF33CC"></asp:RequiredFieldValidator>
         </div>
 
         <div>
             <asp:Label ID="Label2" runat="server" Text="Hight(in inches):"></asp:Label>
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter your hight!!" ControlToValidate="TextBox2" ForeColor="#FF33CC"></asp:RequiredFieldValidator>
         </div>
         <asp:Button ID="Button1" runat="server" Text="Get BMI!" OnClick="Button1_Click" />
         <hr />
